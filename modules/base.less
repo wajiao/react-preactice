@@ -1,0 +1,23 @@
+// 定义配置
+@color: #5b4181;
+@navbarBg: #f9f9f9;
+// @navbarBg: red;
+
+// 定义方法
+.wcenter(@w: auto, @mt: 0, @mb: @mt) {
+	width: @w;
+	margin: @mt auto @mb;
+}
+.hlh(@h: auto) {
+	height: @h;
+	line-height: @h;
+}
+// 定义UI方法
+.ui-btn(@color, @bg) {
+	border: 1px solid @color;
+	padding: 15px 30px;
+	&:hover {
+		background: @color;
+		color: @bg;
+	}
+}
